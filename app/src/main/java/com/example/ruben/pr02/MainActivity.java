@@ -13,7 +13,21 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        <--
+        ///miramos si es la primera vez que se crea la pantalla, si es la primera vez realiza el if sino pasa de el
+
+        if (savedInstanceState !=null)
+
+
+            return;
+        // esto permite manipular los fragments
+
+        getFragmentManager()
+        .beginTransaction()
+        .add(R.id.container01, new Frag1())
+        .commit();
+
+
+
 
 
 
