@@ -15,22 +15,15 @@ public class MainActivity extends ActionBarActivity {
 
         ///miramos si es la primera vez que se crea la pantalla, si es la primera vez realiza el if sino pasa de el
 
-        if (savedInstanceState !=null)
-
-
-            return;
+        if (savedInstanceState !=null) {
+          return;
+        }
         // esto permite manipular los fragments
 
         getFragmentManager()
         .beginTransaction()
-        .add(R.id.container01, new Frag1())
+        .add(R.id.container01, new Frag4())
         .commit();
-
-
-
-
-
-
 
     }
 
@@ -49,11 +42,23 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.container01, new Frag3())
+                    .commit();
             return true;
         }
 
+
+
+
+
+
         return super.onOptionsItemSelected(item);
+
     }
 }
