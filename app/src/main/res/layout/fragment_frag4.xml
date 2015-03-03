@@ -1,11 +1,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="com.example.ruben.pr02.Frag4"
-    android:background="#ff66aa" android:orientation="vertical">
+    android:background="#ff80a9ff" android:orientation="vertical">
 
     <TextView android:text="@string/frag04" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textFrag3" />
+        android:id="@+id/textFrag4" />
 
 
     <Button

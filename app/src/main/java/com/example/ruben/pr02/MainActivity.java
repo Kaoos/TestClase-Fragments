@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -63,6 +64,24 @@ public class MainActivity extends ActionBarActivity {
 
 
         return super.onOptionsItemSelected(item);
+
+    }
+
+    public void button3(View v){
+        Frag3 f3 = (Frag3) getFragmentManager().findFragmentById(R.id.container03);
+        if (f3 !=null)
+        {
+        f3.RebreMissatge3("hola frag3 des de l'activity");
+        }
+
+
+    }
+    public void button4(View v){
+        Frag4 f4 = (Frag4) getFragmentManager().findFragmentById(R.id.container04);
+        if (f4 !=null)
+        {
+        f4.RebreMissatge4("hola frag4 des de l'activity");
+        }
 
     }
 }

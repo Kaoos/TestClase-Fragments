@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:text="@string/buttonView3"
         android:id="@+id/buttonView3"
+        android:onClick="button3"
         />
 
     <Button
@@ -23,6 +24,8 @@
         android:layout_height="wrap_content"
         android:text="@string/buttonView4"
         android:id="@+id/buttonView4"
+
+        android:onClick="button4"
         />
 
     <RelativeLayout
