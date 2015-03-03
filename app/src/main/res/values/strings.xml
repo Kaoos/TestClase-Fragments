@@ -4,8 +4,12 @@
     <string name="app_name">pr02</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Cambiar Fragment</string>
-    <string name="frag01">Estas viendo el Fragment 1</string>
-    <string name="frag02">Ahora el  Fragment 2</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frag03">Fragment 03</string>
+    <string name="frag04">Fragment 04</string>
+    <string name="buttonTextFrag">Enviar Missatge Activity</string>
+
+    <string name="buttonView3">Frag3</string>
+
+    <string name="buttonView4">Frag4</string>
 
 </resources>

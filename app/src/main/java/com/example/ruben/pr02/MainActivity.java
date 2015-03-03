@@ -23,8 +23,13 @@ public class MainActivity extends ActionBarActivity {
         // esto permite manipular los fragments
 
         getFragmentManager()
+                .beginTransaction()
+                .add(R.id.container03, new Frag3())
+                .commit();
+
+        getFragmentManager()
         .beginTransaction()
-        .add(R.id.container01, new Frag4())
+        .add(R.id.container04, new Frag4())
         .commit();
 
     }
@@ -48,19 +53,6 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
 
-
-               if (showing_frag4) //miramos el estado de la boleana para abrir el fragment adecuado
-                   getFragmentManager()
-                           .beginTransaction()
-                           .replace(R.id.container01, new Frag3())
-                           .commit();
-                   else
-                   getFragmentManager()
-                           .beginTransaction()
-                           .replace(R.id.container01, new Frag4())
-                           .commit();
-
-                showing_frag4 = !showing_frag4; //cambiamos el valor de la variable
 
             return true;
         }

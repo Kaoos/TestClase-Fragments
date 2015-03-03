@@ -1,10 +1,18 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="com.example.ruben.pr02.Frag3"
-    android:background="#ffff66">
+    android:background="#ffff66" android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <TextView android:text="@string/frag04" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textFrag3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTextFrag"
+        android:id="@+id/buttonFrag3"
+       />
+
+</LinearLayout>
